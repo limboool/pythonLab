@@ -1,0 +1,70 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <link rel="stylesheet" type="text/css" href="/static/index.css">
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Калькулятор треугольника</title>
+</head>
+<body>
+    <h1>Калькулятор треугольника</h1>
+    <form action="/calculate" method="post">
+        <label for="a">Длина первого катета:</label>
+        <input type="text" name="a" required>
+        <br>
+        <label for="b">Длина второго катета:</label>
+        <input type="text" name="b" required>
+        <br>
+        <input type="submit" value="Рассчитать">
+    </form>
+
+    <h1>Калькулятор суммы или разности</h1>
+    <form action="/calculate_sum_or_difference" method="post">
+        <label for="a">Число a:</label>
+        <input type="text" name="a" required>
+        <br>
+        <label for="b">Число b:</label>
+        <input type="text" name="b" required>
+        <br>
+        <label for="c">Число c:</label>
+        <input type="text" name="c" required>
+        <br>
+        <input type="submit" value="Рассчитать">
+    </form>
+
+    <h1>Замена символов</h1>
+    <form action="/replace_character" method="post">
+        <label for="input_string">Ввод строки:</label>
+        <input type="text" name="input_string" required>
+        <br>
+        <label for="key">Символ для замены:</label>
+        <input type="text" name="key" required>
+        <br>
+        <input type="submit" value="Заменить">
+    </form>
+
+    <h1>Добавление числа в массив</h1>
+    <form action="/insert_into_array" method="post">
+        <label for="number">Число для добавления:</label>
+        <input type="text" name="number" required>
+        <br>
+        <label for="position">Позиция для добавления числа:</label>
+        <input type="text" name="position" required>
+        <br>
+        <input type="submit" value="Добавить в массив">
+    </form>
+
+    <h1>Преобразование слова</h1>
+    <form action="/capitalize_word" method="post">
+        <label for="input_word">Слово в маленьких латинских буквах:</label>
+        <input type="text" name="input_word" required>
+        <br>
+        <input type="submit" value="Преобразовать">
+    </form>
+
+    <h1>Работа с датой</h1>
+    <form action="/next_day" method="post">
+        <input type="submit" value="Получить следующий день">
+    </form>
+</body>
+</html>
